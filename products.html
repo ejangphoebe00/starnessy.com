@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style>
+    div>input,select{
+      height:30px;
+      width:100%;
+      border: solid 1px lightgray;
+      border-radius:2px;
+      margin-bottom: 8px;
+    }
+    div>p {
+      margin-bottom: 2px;
+      font-weight: bold;
+    }
+    div>textarea{
+      width:100%;
+      border: solid 1px lightgray;
+      border-radius:2px;
+      margin-bottom: 8px;
+    }
+  </style>
+
+</head>
+
+<body class="grey lighten-3">
+
+  <!--Main Navigation-->
+  <header>
+    <!-- Sidebar -->
+    <div class="sidebar-fixed position-fixed">
+
+      <div class="list-group list-group-flush mt-5">
+        <a href="#" class="list-group-item active waves-effect">
+            <i class="fas fa-user mr-3"></i>ADMIN</a>
+        <a href="products.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-table mr-3"></i>Products</a>
+        <a href="orders.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-table mr-3"></i>Orders</a>
+        <a href="reports.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-chart-pie mr-3"></i>Reports</a>
+        <a href="promotions.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-map mr-3"></i>Promotions</a>
+        <a href="sales.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-money-bill-alt mr-3"></i>Sales</a>
+        <a href="settings.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-settings-alt mr-3"></i>Settings</a>
+      </div>
+
+    </div>
+    <!-- Sidebar -->
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class=" mx-lg-5">
+    <div class="container-fluid">
+
+
+      <a class="logo-wrapper waves-effect">
+        <img src="#" class="img-fluid" alt="">
+      </a>
+
+      <!--Card content-->
+        <div class="col-md-8 p-t-30">
+            <div class="profile-head">
+                <ul class="nav nav-tabs p-l-2" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                        role="tab" aria-controls="home" aria-selected="true">Add Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                        role="tab" aria-controls="profile" aria-selected="false">Manage Products</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <!--Card content-->
+      </div>
+      <!-- row 1-->
+
+      <!-- row 2-->
+      <div class="row">
+        <!-- column -->
+        <div class="col-md-10 p-t-20 m-l-20 text-left">
+            <div class="tab-content profile-tab" id="myTabContent">
+                <div class="tab-pane fade show active mt-5" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                   <form class="form-horizontal">
+                      <fieldset>
+                        <!-- <div class="tab-content">
+                    			<div class="tab-pane" id="step1"> -->
+                        <!-- Form Name -->
+                        <!-- <legend class="text-center">PRODUCTS</legend> -->
+
+                        <!-- Text input-->
+                        <div class="form-inline" >
+                          <p class="col-md-4 text-left" for="product_id" style"text-align:left;">Product Id</p>
+                          <div class="col-md-6">
+                          <input id="product_id" name="product_id" placeholder="Product Id" class="input-md" required="" type="text">
+
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class=" form-inline">
+                          <p class="col-md-4" for="product_name">Product Name</p>
+                          <div class="col-md-6">
+                          <input id="product_name" name="product_name" placeholder="Product Name" class="input-md" required="" type="text">
+
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class=" form-inline">
+                          <p class="col-md-4 " for="product_name_fr">Product Description FR</p>
+                          <div class="col-md-6">
+                          <input id="product_name_fr" name="product_name_fr" placeholder="Product Description FR" class=" input-md" required="" type="text">
+
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class=" form-inline">
+                          <p class="col-md-4 " for="available_quantity">Available Quantity</p>
+                          <div class="col-md-6">
+                          <input id="available_quantity" name="available_quantity" placeholder="Available Quantity" class=" input-md" required="" type="text">
+
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class=" form-inline">
+                          <p class="col-md-4 " for="product_weight">Product Weight</p>
+                          <div class="col-md-6">
+                          <input id="product_weight" name="product_weight" placeholder="Product Weight" class=" input-md" required="" type="text">
+
+                          </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class=" form-inline">
+                          <p class="col-md-4 " for="product_description">Product Description</p>
+                          <div class="col-md-6">
+                          <textarea class="" id="product_description" name="product_description"></textarea>
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class=" form-inline">
+                          <p class="col-md-4 " for="percentage_discount">Price</p>
+                          <div class="col-md-6">
+                          <input id="percentage_discount" name="percentage_discount" placeholder="Price" class=" input-md" required="" type="text">
+
+                          </div>
+                        </div>
+
+                        <div class=" form-inline">
+                          <p class="col-md-4 " for="percentage_discount">Percentage Discount</p>
+                          <div class="col-md-6">
+                          <input id="percentage_discount" name="percentage_discount" placeholder="Percentage Discount" class=" input-md" required="" type="text">
+
+                          </div>
+                        </div>
+
+                        <!-- File Button -->
+                        <div class=" form-inline">
+                          <p class="col-md-4 " for="filebutton">Images</p>
+                          <div class="col-md-6">
+                            <input id="filebutton" name="filebutton" class="input-file" type="file">
+                            <input id="filebutton" name="filebutton" class="input-file" type="file">
+                            <input id="filebutton" name="filebutton" class="input-file" type="file">
+                            <input id="filebutton" name="filebutton" class="input-file" type="file">
+
+                          </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="text-right">
+                          <p></p>
+                          <div class="col-md-8">
+                          <button id="singlebutton" name="singlebutton" class="btn btn-primary">UPLOAD</button>
+                          </div>
+                        </div>
+
+                      </fieldset>
+                    </form>
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="row">
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="business-tab">
+                </div>
+            </div>
+        </div>
+        <!-- column -->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small primary-color-dark darken-2 wow fadeIn">
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright:
+      <a href="#" target="_blank"> starnessy.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+
+</body>
+
+</html>

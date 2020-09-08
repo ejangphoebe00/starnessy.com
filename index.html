@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Categories</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="aStar Fashion Template Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.3/bootstrap.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/categories.css">
+<link rel="stylesheet" type="text/css" href="styles/categories_responsive.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="css/mdb.min.css" rel="stylesheet">
+<!-- Your custom styles (optional) -->
+<link href="css/style.min.css" rel="stylesheet">
+<style type="text/css">
+	html,
+	body,
+	header,
+	.carousel {
+		height: 60vh;
+	}
+
+	@media (max-width: 740px) {
+
+		html,
+		body,
+		header,
+		.carousel {
+			height: 100vh;
+		}
+	}
+
+	@media (min-width: 800px) and (max-width: 850px) {
+
+		html,
+		body,
+		header,
+		.carousel {
+			height: 100vh;
+		}
+	}
+
+</style>
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+
+			<!-- Hamburger -->
+			<div class="hamburger menu_mm"><i class="fa fa-bars menu_mm" aria-hidden="true"></i></div>
+
+
+
+			<!-- Navigation -->
+			<nav class="header_nav">
+				<ul class="d-flex flex-row align-items-center justify-content-start">
+					<li><a href="index.html">home</a></li>
+					<li><a href="#">Phones</a></li>
+					<li><a href="#">Computers</a></li>
+					<li><a href="#">Electronics</a></li>
+					<li><a href="#">Fashion</a></li>
+					<li><a href="#">Appliances</a></li>
+					<li><a href="#">Funiture</a></li>
+					<li><a href="#">Gaming</a></li>
+					<li><a href="#">Sports</a></li>
+				</ul>
+			</nav>
+
+			<!-- Header Extra -->
+			<div class="header_extra ml-auto d-flex flex-row align-items-center justify-content-start">
+
+				<!-- Language -->
+				<div class="info_languages has_children">
+
+
+				</div>
+
+				<!-- Currency -->
+				<div class="info_currencies has_children">
+					<div class="dropdown_text">Ugx</div>
+					<div class="dropdown_arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+
+					<!-- Currencies Dropdown Menu -->
+					 <ul>
+
+					 </ul>
+
+				</div>
+
+				<!-- Cart -->
+				<div class="cart d-flex flex-row align-items-center justify-content-start">
+					<div class="cart_icon"><a href="cart.html">
+						<img src="images/bag.png" alt="">
+						<div class="cart_num">2</div>
+					</a></div>
+				</div>
+
+			</div>
+
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-start justify-content-start menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="menu_top d-flex flex-row align-items-center justify-content-start">
+
+		</div>
+		<div class="menu_search">
+			<form action="#" class="header_search_form menu_mm">
+				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="index.html">home</a></li>
+				<li class="menu_mm"><a href="#">Phones</a></li>
+				<li class="menu_mm"><a href="#">Computers</a></li>
+				<li class="menu_mm"><a href="#">Electronics</a></li>
+				<li class="menu_mm"><a href="#">Fashion</a></li>
+				<li class="menu_mm"><a href="#">Appliances</a></li>
+				<li class="menu_mm"><a href="#">Funiture</a></li>
+				<li class="menu_mm"><a href="blog.html">Gaming</a></li>
+				<li class="menu_mm"><a href="#">Sports</a></li>
+			</ul>
+		</nav>
+		<div class="menu_extra">
+			<div class="menu_social">
+				<ul>
+					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sidebar -->
+
+	<div class="sidebar">
+
+			<!-- Cart -->
+			<div class="d-flex flex-row align-items-center ml-5 mt-5">
+				<div class="cart_icon"><a href="cart.html">
+					<img src="images/bag.png" alt="">
+					<div class="cart_num">2</div>
+				</a></div>
+				<div class="cart_text">bag</div>
+				<div class="cart_price">Ugx55,000 (1)</div>
+			</div>
+
+			<!-- Search -->
+			<div class="search">
+				<form action="#" class="search_form" id="sidebar_search_form">
+					<input type="text" class="search_input" placeholder="Search" required="required">
+					<button class="search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+				</form>
+			</div>
+
+		<!-- Logo -->
+		<!-- <div class="sidebar_logo">
+			<a href="#"><div>a<span>star</span></div></a>
+		</div> -->
+
+		<!-- Sidebar Navigation -->
+		<nav class="sidebar_nav">
+			<ul>
+				<li><a href="index.html">home<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="#">Phones<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="#">Computers<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="#">Electronics<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="#">Fashion<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="#">Appliances<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="#">Funiture<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="blog.html">Gaming<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="#">Sports<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/categories.jpg" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="home_content">
+				<div class="home_title">Shop</div>
+				<div class="breadcrumbs">
+					<ul class="d-flex flex-row align-items-center justify-content-start">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Woman</a></li>
+						<li>Accessories</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Products -->
+
+	<div class="products">
+
+		<!-- Sorting & Filtering -->
+		<div class="products_bar">
+			<div class="section_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="products_bar_content d-flex flex-column flex-xxl-row align-items-start align-items-xxl-center justify-content-start">
+								<div class="product_categories">
+									<ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
+										<li class="active"><a href="#">All</a></li>
+										<li><a href="#">Hot Products</a></li>
+										<li><a href="#">New Products</a></li>
+										<li><a href="#">Sale Products</a></li>
+									</ul>
+								</div>
+								<div class="products_bar_side ml-xxl-auto d-flex flex-row align-items-center justify-content-start">
+									<div class="products_dropdown product_dropdown_sorting">
+										<div class="isotope_sorting_text"><span>Default Sorting</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+										<ul>
+											<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'>Default</li>
+											<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>Price</li>
+											<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Name</li>
+										</ul>
+									</div>
+									<div class="product_view d-flex flex-row align-items-center justify-content-start">
+										<div class="view_item active"><img src="images/view_1.png" alt=""></div>
+										<div class="view_item"><img src="images/view_2.png" alt=""></div>
+										<div class="view_item"><img src="images/view_3.png" alt=""></div>
+									</div>
+									<div class="products_dropdown text-right product_dropdown_filter">
+										<div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+										<ul>
+											<li class="item_filter_btn" data-filter="*">All</li>
+											<li class="item_filter_btn" data-filter=".hot">Hot</li>
+											<li class="item_filter_btn" data-filter=".new">New</li>
+											<li class="item_filter_btn" data-filter=".sale">Sale</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_container">
+			<div class="container">
+				<!--Grid row-->
+				<div class="row wow fadeIn mt-5">
+
+					<!--Grid column-->
+					<div class="col-lg-3 col-md-6 mb-4 ">
+
+						<!--Card-->
+						<div class="card">
+
+							<!--Card image-->
+							<div class="view overlay">
+								<img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+									alt="">
+								<a>
+									<div class="mask rgba-white-slight"></div>
+								</a>
+							</div>
+							<!--Card image-->
+
+							<!--Card content-->
+							<div class="card-body text-center">
+								<!--Category & Title-->
+								<a href="" class="grey-text">
+									<h5>Shirt</h5>
+								</a>
+								<h5>
+									<strong>
+										<a href="product.html" class="dark-grey-text">Denim shirt
+											<span class="badge badge-pill danger-color">NEW</span>
+										</a>
+									</strong>
+								</h5>
+
+								<h4 class="font-weight-bold blue-text">
+									<strong>Ugx 25,000</strong>
+								</h4>
+
+							</div>
+							<!--Card content-->
+
+						</div>
+						<!--Card-->
+
+					</div>
+					<!--Grid column-->
+
+					<!--Grid column-->
+					<div class="col-lg-3 col-md-6 mb-4">
+
+						<!--Card-->
+						<div class="card">
+
+							<!--Card image-->
+							<div class="view overlay">
+								<img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="card-img-top"
+									alt="">
+								<a>
+									<div class="mask rgba-white-slight"></div>
+								</a>
+							</div>
+							<!--Card image-->
+
+							<!--Card content-->
+							<div class="card-body text-center">
+								<!--Category & Title-->
+								<a href="" class="grey-text">
+									<h5>Sport wear</h5>
+								</a>
+								<h5>
+									<strong>
+										<a href="product.html" class="dark-grey-text">Sweatshirt</a>
+									</strong>
+								</h5>
+
+								<h4 class="font-weight-bold blue-text">
+									<strong>Ugx 28,000</strong>
+								</h4>
+
+							</div>
+							<!--Card content-->
+
+						</div>
+						<!--Card-->
+
+					</div>
+					<!--Grid column-->
+
+					<!--Grid column-->
+					<div class="col-lg-3 col-md-6 mb-4">
+
+						<!--Card-->
+						<div class="card">
+
+							<!--Card image-->
+							<div class="view overlay">
+								<img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg" class="card-img-top"
+									alt="">
+								<a>
+									<div class="mask rgba-white-slight"></div>
+								</a>
+							</div>
+							<!--Card image-->
+
+							<!--Card content-->
+							<div class="card-body text-center">
+								<!--Category & Title-->
+								<a href="" class="grey-text">
+									<h5>Sport wear</h5>
+								</a>
+								<h5>
+									<strong>
+										<a href="" class="dark-grey-text">Grey blouse
+											<span class="badge badge-pill primary-color">bestseller</span>
+										</a>
+									</strong>
+								</h5>
+
+								<h4 class="font-weight-bold blue-text">
+									<strong>Ugx 26,000</strong>
+								</h4>
+
+							</div>
+							<!--Card content-->
+
+						</div>
+						<!--Card-->
+
+					</div>
+					<!--Grid column-->
+
+					<!--Fourth column-->
+					<div class="col-lg-3 col-md-6 mb-4">
+
+						<!--Card-->
+						<div class="card">
+
+							<!--Card image-->
+							<div class="view overlay">
+								<img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top"
+									alt="">
+								<a>
+									<div class="mask rgba-white-slight"></div>
+								</a>
+							</div>
+							<!--Card image-->
+
+							<!--Card content-->
+							<div class="card-body text-center">
+								<!--Category & Title-->
+								<a href="" class="grey-text">
+									<h5>Outwear</h5>
+								</a>
+								<h5>
+									<strong>
+										<a href="product.html" class="dark-grey-text">Black jacket</a>
+									</strong>
+								</h5>
+
+								<h4 class="font-weight-bold blue-text">
+									<strong>Ugx 32,000</strong>
+								</h4>
+
+							</div>
+							<!--Card content-->
+
+						</div>
+						<!--Card-->
+
+					</div>
+					<!--Fourth column-->
+
+				</div>
+				<!--Grid row-->
+			</div>
+		</div>
+	</div>
+
+
+	      <!--Pagination-->
+	      <nav class="d-flex justify-content-center wow fadeIn">
+	        <ul class="pagination pg-blue">
+
+	          <!--Arrow left-->
+	          <li class="page-item disabled">
+	            <a class="page-link" href="#" aria-label="Previous">
+	              <span aria-hidden="true">&laquo;</span>
+	              <span class="sr-only">Previous</span>
+	            </a>
+	          </li>
+
+	          <li class="page-item active">
+	            <a class="page-link" href="#">1
+	              <span class="sr-only">(current)</span>
+	            </a>
+	          </li>
+	          <li class="page-item">
+	            <a class="page-link" href="#">2</a>
+	          </li>
+	          <li class="page-item">
+	            <a class="page-link" href="#">3</a>
+	          </li>
+	          <li class="page-item">
+	            <a class="page-link" href="#">4</a>
+	          </li>
+	          <li class="page-item">
+	            <a class="page-link" href="#">5</a>
+	          </li>
+
+	          <li class="page-item">
+	            <a class="page-link" href="#" aria-label="Next">
+	              <span aria-hidden="true">&raquo;</span>
+	              <span class="sr-only">Next</span>
+	            </a>
+	          </li>
+	        </ul>
+	      </nav>
+	      <!--Pagination-->
+	<!-- Footer -->
+
+	<footer class="footer">
+
+		<!-- Credits -->
+		<div class="credits">
+			<div class="section_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="credits_content d-flex flex-row align-items-center justify-content-end">
+								<div class="credits_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> starnessy.com</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.3/popper.js"></script>
+<script src="styles/bootstrap-4.1.3/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/Isotope/fitcolumns.js"></script>
+<script src="js/categories.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+	// Animations initialization
+	new WOW().init();
+
+</script>
+</body>
+</html>
